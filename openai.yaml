@@ -35,11 +35,4 @@ paths:
       responses:
         "200":
           description: Event submitted successfully
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  success:
-                    type: boolean
-                    example: true
+
