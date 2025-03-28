@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "RoseRock Local Plugin",
+  "name_for_model": "roserock_gpt_plugin",
+  "description_for_human": "Submit local Roseville and Rocklin event flyers to Airtable.",
+  "description_for_model": "Submit local events found in flyer images to a webhook that stores events in Airtable. Use this when an image contains event name, time, date, and location.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://yourdomain.com/openapi.yaml"
+  },
+  "logo_url": "https://yourdomain.com/logo.png",
+  "contact_email": "you@example.com",
+  "legal_info_url": "https://yourdomain.com/privacy"
+}
