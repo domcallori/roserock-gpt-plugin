@@ -1,4 +1,4 @@
-openapi: 3.0.1
+openapi: 3.1.0
 info:
   title: Submit Community Event
   version: 1.0.0
@@ -10,6 +10,7 @@ paths:
     post:
       operationId: submitEventFromImage
       summary: Submit an event found on a flyer
+      description: Extract event details from a flyer and submit them to Airtable if not already present.
       requestBody:
         required: true
         content:
@@ -35,4 +36,3 @@ paths:
       responses:
         "200":
           description: Event submitted successfully
-
