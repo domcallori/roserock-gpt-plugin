@@ -3,6 +3,8 @@ info:
   title: Submit Community Event
   version: 1.0.0
   description: Submit event details from a flyer image to a webhook if the event isn't already in Airtable.
+servers:
+  - url: https://hooks.zapier.com/hooks/catch/2066959/2ep8bmf/
 paths:
   /:
     post:
@@ -33,3 +35,11 @@ paths:
       responses:
         "200":
           description: Event submitted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                    example: true
